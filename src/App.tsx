@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { FaCog } from "react-icons/fa";
-import { MdWarningAmber } from "react-icons/md";
+import { MdVerified, MdVerifiedUser } from "react-icons/md";
 import { FaComments } from "react-icons/fa";
-
-
-
 import "./App.css";
 
 function App() {
@@ -29,9 +26,8 @@ function App() {
             <button onClick={handleConsultar}>Consultar</button>
             <p>Consulte intimações e movimentações de forma clara e rápida</p>
             
-            <div className="howWork">
-                <fieldset><h2 className="howTitle"><FaCog/> Como funciona</h2></fieldset>   
-                <fieldset>
+            <div className="info">
+                <h2 className="info-title"><FaCog/> Como funciona</h2> 
                 <ol>
                    <li> <strong>1</strong> Digite o numero do processo
                    </li>
@@ -41,10 +37,9 @@ function App() {
                     <strong>3</strong> Voce entendeu o que aconteceu
                    </li>
                 </ol>
-                </fieldset>
             </div>
             <div className="features">
-                <p> <MdWarningAmber/>Dados Publicos</p><p>Sem cadastro</p> <p>Gratuito</p>
+                <p> <MdVerifiedUser/>Dados Publicos</p><p>Sem cadastro</p> <p>Gratuito</p>
             </div>
         <div className="Resumeprocess">
             <details>
@@ -59,7 +54,7 @@ function App() {
          </div>
           <div className="Resumeprocess">
             <details>
-                <summary><FaComments/>Informação ténicas</summary>
+                <summary><FaComments/>Informação tecnicas</summary>
                 <ul>
                     <li></li>
                     <li></li>
@@ -71,7 +66,7 @@ function App() {
           <div>
                 <p className="features">Acessar diretamente</p>
                 <br/>
-                <a href="https://www.exemplo.com">Abrir no diário da Justiça</a>
+                <a href="">Abrir no diário da Justiça</a>
             </div>
         </div>
     );

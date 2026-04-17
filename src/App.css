@@ -1,32 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 :root {
-  --color-main: rgb(46, 46, 46);;
-  --color-segunda:  rgb(228, 225, 225);;
+    --white: ##d8d5d3;
+    --black: #2f2e2f;
+    --black-alt: #252526;
+    --green: #6e8d45;
+    --gray: #a7a6a6;
+    --border: #4f4e4f;
 }
 header, h1{
-    background-color: rgb(86, 130, 3);
     padding: 20px;
 }
 body{
-    background-color: rgb(152, 201, 85);
+    background: var(--black);
+    color: #d8d5d3;
+    font-family: "Poppins", sans-serif;
 }
 div{
     background-repeat: no-repeat;
     text-align: center;
 }
 h1, h2{
-    color: white;
+    color: var(--white);
 }
 h1 {
     background-image: url(/public/logo-transparente.png);
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: 40%;
-    background-color: rgb(86, 130, 3);
+    background-color: var(--black-alt);
     transition: color 0.3s ease;
 }
 
@@ -40,67 +47,82 @@ input{
     margin: 20px;
     padding: 5px;
     background-color: rgb(228, 225, 225);
-    border-radius: 5px;
-    border: 2px solid black;
+    border: none;
     font-size: 20px;
     color: rgb(46, 46, 46);
-    width: 45%;
+    width: 30%;
 }
-button{
+button {
     margin: 20px;
     padding: 5px;
     margin-left: -50px;
+    border: none;
     font-size: 20px;
-    background-color: rgb(85, 148, 69);
-    border-radius: 5px;
-    border: 2px solid black;
-    color: white;
+    background-color: var(--green);
+    border-radius: 0 5px 5px 0;
+    color: var(--white);
     cursor: pointer;
 }
 button:hover{
-    background-color:  rgb(85, 202, 55);
+    background-color: var(--border);
 }
 li{
     color: white;
     list-style: none;
 }
-.howWork{
-    width: 30%;
-    padding: 2px;
-    background-color: rgb(86, 130, 3);
-    margin: 2rem auto;
-    border-radius: 8px;
+.info{
+    background: var(--black-alt);
     text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    h1 {
+        border-bottom: 1px solid var(--border);
+    }
+
+    p {
+        color: var(--white);
+        padding: 1rem 0;
+        span {
+            background: var(--gray);
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            margin-right: 0.5rem;
+        }
+    }
 }
-.howTitle{
+.info svg{
+    background-color: var(--black-alt);
+}
+.info-title{
     text-align: left;
     margin-right: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color:  rgb(205, 220, 57);
+    color: var(--gray);
 }
-.howTitle svg {
-    color:  rgb(139, 90, 43);
+.info-title svg {
+   color: var(--gray);
 }
 li{
     margin: 1rem 0;
     font-size: 18px;
 }
-fieldset{
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: rgb(75, 71, 71);
-}
 strong{
-   background-color: rgb(139, 90, 43);
+    background-color: var(--black);
     padding: 5px;
-    color: rgb(152, 201, 85);
+    color: var(--gray);
     margin: 5px;
     border-radius: 5px;
 }
 p{
-    color: rgb(1, 92, 1)
+    color: var(--green);
 }
 .features {
     display: flex;
@@ -108,90 +130,31 @@ p{
     gap: 2rem;
 }
 .features p {
-    margin: 0;
-    color: rgb(1, 92, 1);
-}
-/* Celular pequeno */
-@media (max-width: 480px) {
-    .howWork {
-        width: 95%;
-        padding: 1rem;
-    }
-
-    input {
-        width: 95%;
-        font-size: 16px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 0.5rem;
-    }
-
-    .features {
-        flex-direction: column;
-        gap: 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .logo {
-        width: 50px;
-    }
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    .howWork {
-        width: 85%;
-    }
-
-    input {
-        width: 85%;
-    }
-
-    .features {
-        flex-direction: row;
-        gap: 1rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .howWork {
-        width: 25%;
-    }
-
-    input {
-        width: 40%;
-    }
+    display: flex;
+    justify-content: center;
+    color: var(--green);
+    padding: 1rem 0;
 }
 summary {
-    background-color: rgb(139, 90, 43);
+    background-color: var(--black-alt);
     width: 20%;
     font-size: 20px;
     padding: 4px;
     border-radius: 5px;
     margin: 4px auto;
-    color: white;
+    color: var(--gray);
     cursor: pointer;
     display: -webkit-box;
     list-style: none;
 }
 summary svg{
-    color: rgb(1, 92, 1);
+    color: var(--gray);
     width: 40px;
 }
 a{
-    color: rgb(152, 201, 85);
+    color: var(--green);
     width: 40px;
     text-decoration: none;
-    background-color: rgb(139, 90, 43);
+    background-color: var(--black-alt);
     padding: 10px;
 }
