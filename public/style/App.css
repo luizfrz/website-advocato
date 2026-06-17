@@ -29,10 +29,10 @@ h1, h2{
     color: var(--white);
 }
 h1 {
-    background-image: url(/public/logo-transparente.png);
+    background-image: url(../img/logo-transparente.png);
     background-repeat: no-repeat;
     background-size: 80px;
-    background-position: 40%;
+    background-position:40%;
     background-color: var(--black-alt);
     transition: color 0.3s ease;
 }
@@ -53,6 +53,50 @@ input{
     color: rgb(46, 46, 46);
     width: 30%;
 }
+
+summary {
+    background-color: var(--black-alt);
+    width: 20%;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 4px auto;
+    color: var(--gray);
+    cursor: pointer;
+    display: -webkit-box;
+    list-style: none;
+}
+summary svg{
+    color: var(--gray);
+    width: 40px;
+}
+a{
+    color: var(--green);
+    width: 40px;
+    text-decoration: none;
+    padding: 10px;
+}
+li{
+    margin: 1rem 0;
+    font-size: 18px;
+}
+strong{
+    background-color: var(--black);
+    padding: 5px;
+    color: var(--gray);
+    margin: 5px;
+    border-radius: 5px;
+}
+p{
+    color: var(--green);
+}
+button:hover{
+    background-color: var(--border);
+}
+li{
+    color: white;
+    list-style: none;
+}
 button {
     margin: 20px;
     padding: 5px;
@@ -65,7 +109,8 @@ button {
     cursor: pointer;
     margin-bottom: 10px;
 }
-.Resetprocess {
+
+.resetProcess {
     width: 40px;
     height: 40px;
     border: none;
@@ -73,16 +118,13 @@ button {
     border-radius: 50%;
     cursor: pointer;
 }
-.Resetprocess svg{
-    font-size: 30px;
+.resetProcess svg{
+    height: 22px;
+    width:28px;
+    text-align: center;
+    border-radius: 10px;
 }
-button:hover{
-    background-color: var(--border);
-}
-li{
-    color: white;
-    list-style: none;
-}
+
 .info{
     background: var(--black-alt);
     text-align: left;
@@ -123,52 +165,31 @@ li{
 .info-title svg {
    color: var(--gray);
 }
-li{
-    margin: 1rem 0;
-    font-size: 18px;
-}
-strong{
-    background-color: var(--black);
-    padding: 5px;
-    color: var(--gray);
-    margin: 5px;
-    border-radius: 5px;
-}
-p{
-    color: var(--green);
-}
-.features {
+
+.featureProcess {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
-.features p {
+.featureProcess p {
     display: flex;
     justify-content: center;
     color: var(--green);
     padding: 1rem 0;
     margin: 2px;
 }
-summary {
-    background-color: var(--black-alt);
+.featureProcess svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.summaryProcess li{
+    background-color: var(--green);
     width: 20%;
-    font-size: 20px;
-    padding: 4px;
-    border-radius: 5px;
-    margin: 4px auto;
-    color: var(--gray);
-    cursor: pointer;
-    display: -webkit-box;
-    list-style: none;
-}
-summary svg{
-    color: var(--gray);
-    width: 40px;
-}
-a{
-    color: var(--green);
-    width: 40px;
-    text-decoration: none;
-    background-color: var(--black-alt);
-    padding: 10px;
+    color: var(--white);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 4px;
 }
